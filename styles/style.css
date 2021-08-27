@@ -16,14 +16,6 @@ header {
   background: #11101D;
 }
 
-code {
-  background-color: gray; opacity: .8;
-  border-radius: 6px;
-  display: block;
-  padding: 10px;
-  color: white;
-}
-
 .nav_links li{
   color: white;
   list-style: none;
@@ -39,12 +31,6 @@ code {
 
 .nav_links li a:hover {
   color: teal;
-}
-
-.bar-logo {
-  cursor: pointer;
-  height: 70px;
-  padding-left: 76px;
 }
 
 .sidebar{
@@ -269,7 +255,7 @@ code {
 }
 .home-section{
   position: relative;
-  background: red;
+  background: #181629;
   min-height: 100vh;
   top: 0;
   left: 78px;
@@ -281,13 +267,22 @@ code {
   left: 250px;
   width: calc(100% - 250px);
 }
-.home-section .text{
+.home-section code{
+  background-color: gray; opacity: .8;
+  border-radius: 6px;
   display: inline-block;
   color: #11101d;
   font-size: 16px;
   font-weight: 500;
   margin: 18px
 }
+
+code {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
