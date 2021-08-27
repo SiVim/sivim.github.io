@@ -7,6 +7,7 @@
   font-family: "Poppins" , sans-serif;
 }
 li, a {
+  color: white;
   font-family: "Poppins" , sans-serif;
   text-decoration: none;
 }
@@ -61,7 +62,6 @@ header {
   transition: all 0.5s ease;
 }
 .sidebar .logo-details .logo_name{
-  color: #fff;
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
