@@ -10,7 +10,7 @@
   transition: all 0.5s ease;
 }
 .sidebar.open {
-  width: 250px;
+  width: 210px;
 }
 .sidebar .logo-details {
   height: 60px;
@@ -222,7 +222,7 @@
   background: none;
 }
 .sidebar.open ~ .home-section {
-  left: 250px;
+  left: 200px;
   width: calc(100% - 250px);
 }
 @media (max-width: 420px) {
