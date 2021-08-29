@@ -223,10 +223,16 @@
 }
 .sidebar.open ~ .home-section {
   left: 200px;
-  width: calc(100% - 250px);
+  width: calc(100% - 200px);
 }
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
   }
 }
+
+/* @media only screen and (max-width: 500px) {
+  .sidebar {
+      display: none;
+  }
+} */

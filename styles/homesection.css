@@ -1,23 +1,22 @@
 .home-section {
   position: relative;
   background: #181629;
-  min-height: 100vh;
   overflow-y: hidden;
   top: 0;
   left: 78px;
   width: calc(100% - 78px);
+  height: calc(100vh - 70px);
   transition: all 0.5s ease;
   z-index: 2;
 }
 
 .home-section code {
-  background-color: gray; opacity: .8;
-  border-radius: 6px;
+  background-color: #312e57; opacity: .8;
+  border-radius: 4px;
   display: inline-block;
-  color: #11101d;
+  color: white;
   font-size: 16px;
-  font-weight: 500;
-  margin: 18px
+  padding: 2px;
 }
 
 .home-section text {
@@ -32,14 +31,26 @@
 }
 
 /*Index*/
-.home-section .index h1 a {
+.home-section .index h1 {
   color: white;
   display: block;
-  font-size: 28px;
+  font-size: 30px;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 70px;
+  padding-top: 30px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid white;
+}
+
+.home-section .index h2 {
+  color: white;
+  display: block;
+  font-size: 24px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
   padding-bottom: 4px;
   border-bottom: 1px solid white;
 }
@@ -67,9 +78,17 @@
   padding-bottom: 4px;
 }
 
-/* .home-section .showcase img {
+.home-section .index img {
+  border-radius: 10px;
   display: block;
-  width: 60%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
+}
+
+/* @media only screen and (max-width: 500px) {
+  .home-section {
+    width: calc(100% - 78px);
+  }
 } */
