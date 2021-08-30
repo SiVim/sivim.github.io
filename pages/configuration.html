@@ -19,7 +19,7 @@
     <nav>
       <ul class="nav_links">
         <li><a href="/pages/getting-started.html">Getting Started</a></li>
-        <li><a href="#">Configuration</a></li>
+        <li><a href="/pages/configuration.html">Configuration</a></li>
         <li><a href="#">Source</a></li>
         <li>
           <a href="https://github.com/SiVim/SiVim">Github</a>
@@ -80,7 +80,7 @@
   </div>
 
   <section class="home-section">
-      <div class="getting-started">
+      <div class="configuration">
         <h1>Configuration</h1>
 
         <h2>Keybindings</h2>
@@ -115,7 +115,24 @@
             the leader key's contents with a key of your choice.
         </text>
 
-        <h2>Mac / Linux:</h2>
+        <h2>File Sctructure</h2>
+        <text>Below is the file structure, some of which is not included due to Vim-Plug generating it's own files upon installation.</text>
+
+        <text style="padding-bottom: 100px;">
+          <code>
+            ├─ init.vim</br>
+            ├─ general</br>
+            │ &nbsp;&nbsp;├─ bindings.vim</br>
+            │ &nbsp;&nbsp;├─ dashboard.vim</br>
+            │ &nbsp;&nbsp;├─ funcs.vim</br>
+            │ &nbsp;&nbsp;├─ sets.vim</br>
+            │ &nbsp;&nbsp;└─ tree.vim</br>
+            └─ vim-plug</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ plugins.vim</br>
+          </code>
+        </text>
+
+        
 
       </div>
   </section>
