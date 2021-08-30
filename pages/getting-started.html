@@ -10,12 +10,12 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greetings | SiVim</title>
-    <link rel="tab icon" href="/assets/logos/SvimLogo.png">
+    <link rel="tab icon" href="/assets/logos/SiVim-Small.png">
   </head>
 
 <body>
   <header>
-    <img class="bar-logo" src="/assets/logos/SvimLogo.png">
+    <img class="bar-logo" src="/assets/logos/SiVim-Small.png">
     <nav>
       <ul class="nav_links">
         <li><a href="/pages/getting-started.html">Getting Started</a></li>
@@ -31,7 +31,7 @@
 
   <div class="sidebar">
     <div class="logo-details">
-      <img src="/assets/logos/SvimLogo.png" class='bx bxl-c-plus-plus icon'></img>
+      <img src="/assets/logos/SiVim-Small.png" class='bx bxl-c-plus-plus icon'></img>
         <div class="logo_name"><a href="/index.html">SiVim</a></div>
         <i class='bx bx-menu' id="btn"></i>
     </div>
@@ -81,18 +81,44 @@
 
   <section class="home-section">
       <div class="getting-started">
-        <h1>Getting Started</h1>
+        <h1>Pre-requisites</h1>
+        <ul>
+          <li><a href="https://github.com/neovim/neovim/releases/tag/nightly">Neovim 0.5 or Greater</a></li>
+          <li><code>git</code></li>
+        </ul>
+
+        <h2>Installation</h2>
         <text>
-          SiVim has a relatively simple install that consists of inputting some basic
-          commands into the terminal.
+          The installation process is very simple, and only requires a couple of simple commands.
         </text>
 
-        <h2>Pre-requisites</h2>
         <text>
-          <li>Neovim 5.0+</li>
+          If you have an existing config, make a backup:<br>
+          <code>$ mv ~/.config/nvim ~/.config/nvim.backup</code>
+        </text> 
+
+        <h3>Mac / Linux:</h3>
+        <text>Clone the repo:</br><code>$ git clone https://github.com/SiVim/SiVim ~/.config/nvim</code></text>
+        <text>Install Vim-Plug:<code>$ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</code></text>
+        <text style="padding-bottom: 0px;">Finally, enter SiVim, and enter the following:</text>
+        <text style="padding-top: 0px;"><code>:PlugInstall</code></text>
+
+        <h3>Windows:</h3>
+        <text>
+          Windows has currently not been tested, and therefore cannot be installed correctly.
         </text>
 
-        <!--<img src="/assets/screenshots/ShowCase.png">--> 
+        <h2>Uninstallation</h2>
+        <text>
+          Uninstallation is very simple, and only consists of removing the Neovim config files:
+        </text>
+        <text style="padding-bottom: 40px;">
+          <code>
+            rm ~/.config/nvim/init.vim </br>
+            rm -rf ~/.config/nvim/general </br>
+            rm -rf ~/.config/nvim/vim-plug </br>
+          </code>
+        </text>
       </div>
   </section>
   <script src="/scripts/sidebar.js"></script>
