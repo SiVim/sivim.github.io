@@ -12,6 +12,14 @@ li, a {
   text-decoration: none;
 }
 
+a {
+  transition: all 0.3s ease 0s;
+}
+
+a:hover {
+  color: #585297;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -22,4 +30,13 @@ code {
   display: block;
   padding: 10px;
   color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: block;
 }
