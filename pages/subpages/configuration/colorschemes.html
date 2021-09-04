@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/styles/sidebar.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuration | SiVim</title>
+    <title>Colors & Schemes | SiVim</title>
     <link rel="tab icon" href="/assets/logos/SiVim-Small.png">
   </head>
 
@@ -81,61 +81,47 @@
 
   <section class="home-section">
       <div class="configuration">
-        <h1>Configuration</h1>
+        <h1>Colors & Schemes</h1>
         <text>A general synopsis of this section highlights some key aspects of SiVim's configuration.</text>
 
-        <h2>Keybindings</h2>
-        <text>The code snippet below showcases the keybindings used in SiVim.</text>
+        <h2>Colors</h2>
+        <text>
+            At the moment, all colours are centered around basic text styling. Other colors are controlled by
+            your personal terminal color scheme. The following code block shows all highlighting restrictions.
+        </text>
 
         <text>
-            <code> 
-                " Leader </br>
-                let mapleader = " " </br></br>
-
-                " Telescope</br>
-                nnoremap &lt;leader>l :Telescope&lt;Enter></br>
-                nnoremap &lt;leader>f :lua require('telescope.builtin').find_files()&lt;Enter></br></br>
-
-                " Nvim-Tree</br>
-                nnoremap &lt;leader>d :NvimTreeOpen&lt;Enter></br>
-                nnoremap &lt;leader>q :NvimTreeClose&lt;Enter></br></br>
-                    
-                " Buffers</br>
-                nnoremap &lt;leader>a :BufferLineCycleNext&lt;Enter></br>
-                nnoremap &lt;leader>e :BufferLineCloseRight&lt;Enter></br></br>
-
-                " Rebinds</br>
-                nnoremap &lt;leader>c :vsplit&lt;Enter></br>
-                nnoremap &lt;leader>x :split&lt;Enter></br>
-                nnoremap &lt;leader>r :term&lt;Enter></br>
+            <code>
+                highlight Normal guibg=none ctermbg=none</br>
+                highlight LineNr guibg=none ctermbg=none</br>
+                highlight Folded guibg=none ctermbg=none</br>
+                highlight NonText guibg=none ctermbg=none</br>
+                highlight SpecialKey guibg=none ctermbg=none</br>
+                highlight VertSplit guibg=none ctermbg=none</br>
+                highlight SignColumn guibg=none ctermbg=none</br>
+                highlight EndOfBuffer guibg=none ctermbg=none</br>
             </code>
         </text>
 
         <text>
-            By default, the leader key is space, but this can be changed quite easily by replacing
-            the leader key's contents with a key of your choice.
+            These are the default settings, located inside of /.config/nivm/vim-plug/plugins.vim, but you can
+            them to your personal preference.
         </text>
 
-        <h2>File Structure</h2>
-        <text>Below is the file structure, some of which is not included due to Vim-Plug generating it's own files upon installation.</text>
-
+        <h2>Color Schemes</h2>
+        <text>Currently, there are about three themes. These include: Gruvbox, Everforest, and Onedark.</text>
+        
         <text>
-          <code>
-            ├─ init.vim</br>
-            ├─ general</br>
-            │ &nbsp;&nbsp;├─ bindings.vim</br>
-            │ &nbsp;&nbsp;├─ dashboard.vim</br>
-            │ &nbsp;&nbsp;├─ funcs.vim</br>
-            │ &nbsp;&nbsp;├─ sets.vim</br>
-            │ &nbsp;&nbsp;└─ tree.vim</br>
-            └─ vim-plug</br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ plugins.vim</br>
-          </code>
+            <code>
+                Plug 'sainnhe/everforest'</br>
+                Plug 'navarasu/onedark.nvim'</br>
+                Plug 'gruvbox-community/gruvbox'</br>
+            </code>
         </text>
 
-        <footer class="foot_nav">
-          <a href="/pages/getting-started.html">&lt; Getting Started</a>
-          <a href="/pages/subpages/configuration/colorschemes.html">Colors & Schemes &gt;</a>
+        <footer class="foot_nav" style="padding-bottom: 102px;">
+          <a href="/pages/configuration.html">&lt; Configuration</a>
+          <a href="#">Colors & Schemes &gt;</a>
         </footer>
       </div>
   </section>
