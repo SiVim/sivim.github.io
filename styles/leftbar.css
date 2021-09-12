@@ -2,9 +2,9 @@
     display: block;
     position: fixed;
     right: 0;
-    top: 100px;
+    top: 80px;
     height: 40%;
-    width: calc(50% - 700px);
+    width: calc(50% - 600px);
     border-left: 1px solid white;
 }
 
