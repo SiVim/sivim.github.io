@@ -1,11 +1,11 @@
 .leftbar {
-    display: block;
-    position: fixed;
-    right: 0;
-    top: 80px;
-    height: 40%;
-    width: calc(50% - 600px);
-    border-left: 1px solid white;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 110px;
+  height: 40%;
+  width: calc(50% - 600px);
+  border-left: 1px solid white;
 }
 
 .leftbar li {

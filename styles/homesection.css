@@ -3,11 +3,11 @@
   position: relative;
   background: #181629;
   overflow-y: hidden;
-  top: 40;
-  left: 78px;
-  width: calc(100% - 78px);
+  left: 18px;
+  width: calc(100% - 18px);
   transition: all 0.5s ease;
-  z-index: 2;
+  z-index: 1;
+  padding-top: 70px;
 }
 
 .home-section text {
