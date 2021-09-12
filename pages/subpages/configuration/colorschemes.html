@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/homesection.css">
     <link rel="stylesheet" href="/styles/image.css">
     <link rel="stylesheet" href="/styles/sidebar.css">
+    <link rel="stylesheet" href="/styles/leftbar.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colors & Schemes | SiVim</title>
@@ -80,9 +81,19 @@
   </div>
 
   <section class="home-section">
+    <div class="leftbar">
+      <ul class="nav-list">
+        <li>
+          <a href="subpages/configuration/colorschemes.html">
+            Colors & Schemes
+          </a>
+        </li>
+      </ul>
+    </div>
+
       <div class="configuration">
         <h1>Colors & Schemes</h1>
-        <text>A general synopsis of this section highlights some key aspects of SiVim's configuration.</text>
+        <text>Information pertaining to SiVim's themes.</text>
 
         <h2>Colors</h2>
         <text>
@@ -117,6 +128,16 @@
                 Plug 'navarasu/onedark.nvim'</br>
                 Plug 'gruvbox-community/gruvbox'</br>
             </code>
+        </text>
+
+        <text>
+          You can change colorschemes by editing the following line:
+          Most schemes will have an obvious alias, but you can visit the SiVim
+          text sheet for more info.
+        </text>
+
+        <text>
+          <code>colorscheme {scheme}</code>
         </text>
 
         <footer class="foot_nav" style="padding-bottom: 102px;">
