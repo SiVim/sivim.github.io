@@ -1,4 +1,5 @@
 # sivim.github.io
+## About to have a re-design, in the meantime, reference the SiVim repo for information.
 The SiVim Official Website.
 
 A simple website make with html, css, and js.
